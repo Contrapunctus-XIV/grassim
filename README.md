@@ -13,15 +13,18 @@ Nous partons d'un biome carré, représenté par une liste 2D, composé au dépa
 
 ```
 Couvrir un unique bloc d'herbe
-Tant que tous les blocs ne sont pas couverts d'herbe:
-    Pour chaque bloc du biome:
+Tant que tous les blocs ne sont pas couverts d'herbe Faire
+    Pour chaque bloc du biome Faire
         l <-- liste des blocs voisins du bloc
         g <-- nombre des blocs dans l couverts d'herbe
         p <-- g/(2*longueur(l))
 
         k <-- nombre tiré au hasard entre 0 et 1
-        si k < p:
+        Si k < p Faire
             le bloc se couvre d'herbe
+        Fin Si
+    Fin Pour
+Fin Tant que
 ```
 
 Chaque passage dans la boucle « Tant que » est appelé *étape* de la simulation.
